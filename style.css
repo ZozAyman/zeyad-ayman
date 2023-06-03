@@ -1,0 +1,402 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+} 
+ul {
+    list-style: none;
+}
+.pd-y {
+    padding: 100px 0;
+}
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small screen */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* START SECTION HEADER */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    position: relative;
+}
+header .container .left {
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav ul {
+    display: flex;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #8a8888;
+    padding: 8px 15px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: black;
+}
+nav ul li a.active {
+    position: relative;
+}
+nav ul li a.active:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: black;
+    width: 30px;
+    top: 75%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+}
+.right a {
+    text-decoration: none;
+    display: block;
+    background: white;
+    color: black;
+    font-family: system-ui;
+    padding: 4px 28px;
+    border-radius: 12px;
+}
+/* END SECTION HEADER */
+
+/* START SECTION LANDING */
+.landing {
+    background-image: url(../images/blue_bg.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.landing .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.landing .container .text {
+    padding: 10px;
+    font-family: sans-serif;
+}
+.landing .container .text h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #665d5d;
+}
+.landing .container .text h2 span {
+    color: #b70faa;
+    font-size: 40px;
+    font-weight: 600;
+}
+.landing .container .text p {
+    font-size: 19px;
+    font-weight: normal;
+    color: #777;
+}
+.landing .image {
+    left: 100px;
+    position: relative;
+    top: 55px;
+}
+.landing .image img {
+    max-width: 100%;
+}
+.images {
+    position: absolute;
+    width: 50%;
+    top: -14px;
+    left: 90px;
+}
+.cloud {
+    position: absolute;
+    left: 0;
+    top: 83%;
+    opacity: 0.95;
+}
+/* .images img {
+    position: relative;
+} */
+.waves img {
+    width: 109%;
+    position: absolute;
+    bottom: 27px;
+    left: -415px;
+}
+/* END SECTION LANDING */
+
+/* START SECTION PHOTO */
+.photo .container {
+    position: relative;
+}
+.photo .container img {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.photo .container .images {
+    position: relative;
+} 
+.photo .container .images img {
+    width: 30%;
+    position: absolute;
+    bottom: 308px;
+    left: -25px;
+}
+.photo .container .images .info {
+    position: absolute;
+    bottom: 240px;
+    left: -163px;
+    text-align: center;
+    max-width: 265px;
+    line-height: 1.3;
+}
+.photo .container .images .info h3 {
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.photo .container .images .info p {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #777;
+}
+.photo .container .images2 {
+    position: relative;
+} 
+.photo .container .images2 img {
+    width: 20%;
+    position: absolute;
+    top: -290px;
+}
+.photo .container .images2 .info {
+    position: absolute;
+    left: 415px;
+    top: -115px;
+    max-width: 285px;
+    text-align: center;
+    line-height: 1.3;
+} 
+.photo .container .images2 .info h3 {
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.photo .container .images2 .info p {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #777;
+}
+
+.photo .container .images3 {
+    position: relative;
+} 
+.photo .container .images3 img {
+    width: 20%;
+    position: absolute;
+    left: 80%;
+    top: -8px;
+} 
+.photo .container .images3 .info {
+    position: absolute;
+    right: 75px;
+    text-align: center;
+    max-width: 285px;
+    top: 130px;
+    line-height: 1.3;
+}
+.photo .container .images3 .info h3 {
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.photo .container .images3 .info p {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #777;
+}
+.images4 {
+    width: 30%;
+    max-width: 100%;
+    position: relative;
+    left: -70px;
+}
+.images4 .info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+.images4 .info span {
+    font-size: 13px;
+    color: white;
+    margin-left: 25px;
+}
+.images4 .info h2 {
+    font-size: 40px;
+    padding-left: 25px;
+    font-weight: normal;
+    color: white;
+}
+/* END SECTION PHOTO */
+
+/* START SECTOIN PHOTOS */
+.photos .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+.photos .container .box {
+    position: relative;
+}
+.icons {
+    position: relative;
+    bottom: 140px;
+    font-size: 23px;
+    color: #5a5858;
+}
+.icons .right {
+    position: absolute;
+    right: 0;
+}
+.photos .container .box img {
+    width: 100%;
+    max-width: 100%;
+}
+.photos .container .box .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 247px;
+    font-family: sans-serif;
+    line-height: 1.3;
+    position: absolute;
+    left: 50%;
+    bottom: -5%;
+    transform: translateX(-50%);
+}
+.photos .container .box .info h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: -25px 0;
+}
+.photos .container .box .info p {
+    margin-top: 35px;
+    color: #606060;
+}
+/* END SECTION PHOTOS */
+
+/* START SECTIION FOOTER */
+.footer {
+    background-image: url(../images/Group\ 1131.png);
+    height: 100vh;
+    background-position: top;
+    position: relative;
+    padding: 20px 0;
+}
+.footer .container {
+    position: relative;
+    top: 78%;
+}
+.store-google {
+    display: flex;
+    gap: 30px;
+}
+.appstore {
+    background: white;
+    width: fit-content;
+    display: flex;
+    border-radius: 11px;
+    padding: 2px 15px;
+}
+.appstore img {
+    position: relative;
+    left: -10px;
+    padding: 3px;
+}
+.appstore .info {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 5px;
+}
+.appstore span {
+    font-size: 11px;
+    color: #03a9f4;
+    font-family: sans-serif;
+}
+.appstore h3 {
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.icon-image {
+    margin-top: 20px;
+}
+.icon-image img {
+    padding: 5px;
+    width: 30px;
+}
+.icon-image .facebook {
+    width: 23px;
+}
+.footer .nav {
+    display: flex;
+}
+.footer .nav ul {
+    display: flex;
+}
+.footer .nav ul li a {
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    position: relative;
+    left: -18px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.image-footer img {
+    position: absolute;
+    width: 545px;
+    top: -209px;
+    left: 61%;
+}
+/* END SECTIION FOOTER */
